@@ -11,81 +11,39 @@
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-	<style type="text/css">
-		/*body{
-			width: 400%;
-			height: 100%;
-		}*/
-		#question1, #question2, #question3, #question4, #question5 {
-			width: 100%;
-			min-height: 500px;
-			float: left;
-			display: block;
-			color: white;
-		}
+	<link rel="stylesheet" href="css/reset.css" media="all" />
+	<link rel="stylesheet" href="css/style.css" media="all" />
+	<script src="js/interaction.js"></script>
 
-		#question1{
-			background-color: red;
-		}
-		#question2{
-			background-color: blue;
-		}
-		#question3{
-			background-color: purple;
-		}
-		#question4{
-			background-color: green;
-		}
-		#question5{
-			background-color: yellow;
-		}
-
-	</style>
-
-	 <script type="text/javascript">
-            var scrollY = 0;
-            var distance = 40;
-            var speed = 24;
-
-            function scrollTo(el) {
-                var currentY = window.pageYOffset;
-                var targetY = document.getElementById(el).offsetTop;
-                var bodyHeight = document.body.offsetHeight;
-                var yPos = currentY + window.innerHeight;
-                var animator = setTimeout('scrollTo(\'' + el + '\')', speed);
-                if (yPos > bodyHeight) {
-                    clearTimeout(animator);
-                } else {
-                    if (currentY < targetY - distance) {
-                        scrollY = currentY + distance;
-                        window.scroll(0, scrollY);
-
-                    } else {
-                        clearTimeout(animator);
-                    }
-                }
-            }
-        </script>
 </head>
 <body>
-		<p><a class="calltoaction" onclick="return false;" onmousedown="scrollTo('question5')">Begin !</a></p>	
+<section id="start">
+	<a href="#question1">Begin !</a>
+</section>	
 
 
-		<div id="question1">
-		<p>Eerste vraag</p>
-	</div>
-	<div id="question2">
-		<p>3de vraag</p>
-	</div>
-	<div id="question3">
-		<p>3de vraag</p>
-	</div>
-	<div id="question4">
-		<p>4de vraag</p>
-	</div>
-	<div id="question5">
-		<p>5de vraag</p>
-	</div>
+<section id="question1">
+	<p>Eerste vraag</p>
+	<a href="#question2">Vraag 2</a>
+</section>
+
+<section id="question2">
+	<p>2de vraag</p>
+		<a href="#question3">Vraag 3</a>
+</section>
+
+<section id="question3">
+	<p>3de vraag</p>
+		<a href="#question4">Vraag 4</a>
+</section>
+<section id="question4">
+	<p>4de vraag</p>
+		<a href="#question5">Vraag 5</a>
+</section>
+<section id="question5">
+	<p>5de vraag</p>
+	<a href="#start">Terug naar boven</a>
+</section>
 	<div class="clearfix"></div>
 </body>
 </html>
