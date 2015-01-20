@@ -82,14 +82,114 @@ background: -o-linear-gradient(right, #3498db, #2980b9); /* For Opera 11.1 to 12
 background: -moz-linear-gradient(right, #3498db, #2980b9); /* For Firefox 3.6 to 15 */
 background: linear-gradient(right, #3498db, #2980b9); /* Standard syntax (must be last) */
 min-height:100%;
+}
+.container
+{
+	width: 100%;
+	max-width: 1020px;
+	margin-left: auto;
+	margin-right: auto;
+}
+h3
+{
+	color: white;
+	font-size: 23pt;
+	padding-top: 50px;
+}
+ul
+{
+	width: 100%;
+	max-width: 840px;
+	margin-left: auto;
+	margin-right: auto; 
+}
+#question1 ul p
+{
+	font-size: 14pt;
+}
+ul.slider li
+{
+	float:left;
+	margin-right: 25px;
+}
+#question1 p
+{
+	color: white;
+	margin-top: 100px;
+	font-size: 19pt;
+}
+input[type=checkbox] {
+	visibility: hidden;
+}
+.btn-q2
+{
+	display: block;
+	width: 150px;
+	margin-top: 150px;
+  	padding: 10px 20px;
+  	font-size: 22px;
+  	color: white;
+  	text-align: center;
+  	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  	background: #e74c3c;
+  	border: 0;
+  	border-bottom: 2px solid #db4334;
+  	cursor: pointer;
+  	-webkit-box-shadow: inset 0 -2px #db4334;
+  	box-shadow: inset 0 -2px #db4334;
+}
+.btn-q2:active {
+  top: 1px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 
 }
+.clearfix
+{
+	clear:both;
+}
+
 #question2{
 background: -webkit-linear-gradient(left,#d35400, #e67e22); /* For Safari 5.1 to 6.0 */
 background: -o-linear-gradient(right, #d35400, #e67e22); /* For Opera 11.1 to 12.0 */
 background: -moz-linear-gradient(right, #d35400, #e67e22); /* For Firefox 3.6 to 15 */
 background: linear-gradient(right, #d35400, #e67e22); /* Standard syntax (must be last) */
 min-height:100%;
+}
+#question2 ul p
+{
+	font-size: 14pt;
+}
+#question2 p
+{
+	color: white;
+	margin-top: 100px;
+	font-size: 19pt;
+}
+.btn-q3
+{
+	display: block;
+	width: 150px;
+	margin-top: 150px;
+  	padding: 10px 20px;
+  	font-size: 22px;
+  	color: white;
+  	text-align: center;
+  	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  	background: #2980b9;
+  	border: 0;
+  	border-bottom: 2px solid #2475ab;
+  	cursor: pointer;
+  	-webkit-box-shadow: inset 0 -2px #2475ab;
+  	box-shadow: inset 0 -2px #2475ab;
+}
+.belize-hole-flat-button:active {
+  	top: 1px;
+  	outline: none;
+  	-webkit-box-shadow: none;
+  	box-shadow: none;
 }
 #question3{
 background: -webkit-linear-gradient(left,#2ecc71, #27ae60); /* For Safari 5.1 to 6.0 */
@@ -118,6 +218,193 @@ min-height:100%;
 }
 
 
+/* ----------------YES or No Slider ------------------*/
+.slideOne {
+	width: 80px;
+	height: 30px;
+	background: #333;
+	margin: 20px auto;
+	margin-top: 95px;
+
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	position: relative;
+
+	-webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+	-moz-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+	box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+}
+
+.slideOne:after {
+	content: '';
+	position: absolute;
+	top: 14px;
+	left: 14px;
+	height: 2px;
+	width: 52px;
+
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	background: #111;
+
+	-webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+	-moz-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+	box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+}
+
+.slideOne label {
+	display: block;
+	width: 22px;
+	height: 22px;
+
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+
+	-webkit-transition: all .4s ease;
+	-moz-transition: all .4s ease;
+	-o-transition: all .4s ease;
+	-ms-transition: all .4s ease;
+	transition: all .4s ease;
+	cursor: pointer;
+	position: absolute;
+	top: 4px;
+	z-index: 1;
+	left: 4px;
+
+	-webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+	background: #fcfff4;
+
+	background: -webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: -moz-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: -o-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: -ms-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 );
+}
+
+.slideOne label:after {
+	content: '';
+	position: absolute;
+	width: 10px;
+	height: 10px;
+
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	background: #333;
+	left: 6px;
+	top: 6px;
+
+	-webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0,1), 0px 1px 0px rgba(255,255,255,0.9);
+	-moz-box-shadow: inset 0px 1px 1px rgba(0,0,0,1), 0px 1px 0px rgba(255,255,255,0.9);
+	box-shadow: inset 0px 1px 1px rgba(0,0,0,1), 0px 1px 0px rgba(255,255,255,0.9);
+}
+
+.slideOne input[type=checkbox]:checked + label {
+	left: 54px;
+}
+
+.slideOne input[type=checkbox]:checked + label:after {
+	background: #00bf00;
+}
+.slideTwo {
+	width: 80px;
+	height: 30px;
+	background: #333;
+	margin: 20px auto;
+	margin-top: 95px;
+
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	position: relative;
+
+	-webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+	-moz-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+	box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+}
+
+.slideTwo:after {
+	content: '';
+	position: absolute;
+	top: 14px;
+	left: 14px;
+	height: 2px;
+	width: 52px;
+
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	background: #111;
+
+	-webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+	-moz-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+	box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+}
+
+.slideTwo label {
+	display: block;
+	width: 22px;
+	height: 22px;
+
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+
+	-webkit-transition: all .4s ease;
+	-moz-transition: all .4s ease;
+	-o-transition: all .4s ease;
+	-ms-transition: all .4s ease;
+	transition: all .4s ease;
+	cursor: pointer;
+	position: absolute;
+	top: 4px;
+	z-index: 1;
+	left: 4px;
+
+	-webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+	background: #fcfff4;
+
+	background: -webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: -moz-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: -o-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: -ms-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 );
+}
+
+.slideTwo label:after {
+	content: '';
+	position: absolute;
+	width: 10px;
+	height: 10px;
+
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	background: #333;
+	left: 6px;
+	top: 6px;
+
+	-webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0,1), 0px 1px 0px rgba(255,255,255,0.9);
+	-moz-box-shadow: inset 0px 1px 1px rgba(0,0,0,1), 0px 1px 0px rgba(255,255,255,0.9);
+	box-shadow: inset 0px 1px 1px rgba(0,0,0,1), 0px 1px 0px rgba(255,255,255,0.9);
+}
+
+.slideTwo input[type=checkbox]:checked + label {
+	left: 54px;
+}
+
+.slideTwo input[type=checkbox]:checked + label:after {
+	background: #00bf00;
+}
 /* ----------------STYLE POP UP BOX -----------------*/
 
 a {
@@ -454,3 +741,4 @@ input::-ms-clear, textarea::-ms-clear {
 #cd-login.is-selected, #cd-signup.is-selected, #cd-reset-password.is-selected {
   display: block;
 }
+

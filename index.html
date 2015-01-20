@@ -20,13 +20,15 @@
 	<![endif]-->
 </head>
 <body>
-<section class="main-nav" id="start">
+<section id="start">
 	<h1>Ben jij de toekomst van #WeAreIMD ?</h1>
 	<h2>Ben je net afgestudeerd, en niet zeker wat de toekomst zal brengen? <br/>
 		Wie weet ben jij wel de toekomst van Interactive Multimedia Design! <br/>
 		Ben je al nieuwsgierig? Wij ook trouwens! Gebruik onze voorspeller om te zien of jouw toekomst bij ons ligt.
 	</h2>
-	<a class="cd-signup go" href="#0">Go!</a>
+	<nav class="main-nav">
+		<a class="cd-signup go" href="#0">Go!</a>
+	</nav>
 </section>	
 <div class="cd-user-modal"> <!-- this is the entire modal form, including the background -->
 		<div class="cd-user-modal-container"> <!-- this is the container wrapper -->
@@ -59,17 +61,49 @@
 
 
 <section id="question1">
-	<p>Ben jij net zoals ons zot van coole graphics en moderne websites?</p>
-	<input type="checkbox" value="ja"><label>Ja</label>
-	<input type="checkbox" value="nee"><label>nee</label>
-	<a href="#question2">Vraag 2</a>
+	<div class="container">
+		<h3>Vraag #1</h3>
+		<p>Ben jij, net zoals ons, zot van coole graphics en moderne websites?</p>
+		<ul class="slider">
+			<li>
+				<p>Nee,toch niet</p>
+			</li>
+			<li>
+				<div class="slideOne">	
+				<input type="checkbox" value="None" id="slideOne" name="check" />
+				<label for="slideOne"></label>
+				</div>
+			</li>
+			<li>
+				<p>Jaa, zowiso!</p>
+			</li>
+		</ul>
+		<p class="clearfix">&nbsp;</p>
+		<a href="#question2" class="btn-q2">Volgende</a>
+	</div>
 </section>
 
 <section id="question2">
-	<p>Droom jij ervan om het nieuwe Facebook uit te vinden en miljonair te worden?</p>
-	<input type="checkbox" value="ja"><label>Ja</label>
-	<input type="checkbox" value="nee"><label>nee</label>
-		<a href="#question3">Vraag 3</a>
+	<div class="container">
+		<h3>Vraag #2</h3>
+		<p>Droom jij ervan om het nieuwe Facebook uit te vinden, én miljonair te worden?</p>
+		<ul class="slider">
+			<li>
+				<p>Nee, zo creatief ben ik niet.</p>
+			</li>
+			<li>
+				<div class="slideTwo">	
+				<input type="checkbox" value="None" id="slideTwo" name="check" />
+				<label for="slideTwo"></label>
+				</div>
+			</li>
+			<li>
+				<p>Jaa, ik heb zotte ideeën genoeg!</p>
+			</li>
+		</ul>
+		<p class="clearfix">&nbsp;</p>
+		<a href="#question3" class="btn-q3">Volgende</a>
+	</div>
 </section>
 
 <section id="question3">
