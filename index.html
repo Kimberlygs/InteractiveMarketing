@@ -14,34 +14,96 @@
 	<link rel="stylesheet" href="css/reset.css" media="all" />
 	<link rel="stylesheet" href="css/style.css" media="all" />
 	<script src="js/interaction.js"></script>
+	<script src="js/modernizr.js"></script>
 
 </head>
 <body>
-<section id="start">
-	<a href="#question1">Begin !</a>
+<section class="main-nav" id="start">
+	<a class="cd-signup" href="#0">Begin de test</a>
 </section>	
+<div class="cd-user-modal"> <!-- this is the entire modal form, including the background -->
+		<div class="cd-user-modal-container"> <!-- this is the container wrapper -->
+			
+
+
+			<div id="cd-signup"> <!-- sign up form -->
+				<form class="cd-form">
+					<p class="fieldset">
+						<label class="image-replace cd-username" for="signup-username">Naam</label>
+						<input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Naam">
+						<span class="cd-error-message">Vul je naam in</span>
+					</p>
+
+					<p class="fieldset">
+						<label class="image-replace cd-email" for="signup-email">E-mail</label>
+						<input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+						<span class="cd-error-message">Vul je email adres in</span>
+					</p>
+
+					<p class="fieldset">
+						<input class="full-width has-padding" type="submit" value="Ontdek jouw toekomst">
+					</p>
+				</form>
+
+				<!-- <a href="#0" class="cd-close-form">Close</a> -->
+			</div> <!-- cd-signup -->
+
+			<div id="cd-reset-password"> <!-- reset password form -->
+				<p class="cd-form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
+
+				<form class="cd-form">
+					<p class="fieldset">
+						<label class="image-replace cd-email" for="reset-email">E-mail</label>
+						<input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
+						<span class="cd-error-message">Error message here!</span>
+					</p>
+
+					<p class="fieldset">
+						<input class="full-width has-padding" type="submit" value="Reset password">
+					</p>
+				</form>
+
+				<p class="cd-form-bottom-message"><a href="#0">Back to log-in</a></p>
+			</div> <!-- cd-reset-password -->
+			<a href="#0" class="cd-close-form">Close</a>
+		</div> <!-- cd-user-modal-container -->
+	</div> <!-- cd-user-modal -->
 
 
 <section id="question1">
-	<p>Eerste vraag</p>
+	<p>Ben jij net zoals ons zot van coole graphics en moderne websites?</p>
+	<button>Nee</button>
+	<button>Ja</button>
 	<a href="#question2">Vraag 2</a>
 </section>
 
 <section id="question2">
-	<p>2de vraag</p>
+	<p>Droom jij ervan om het nieuwe Facebook uit te vinden en miljonair te worden?</p>
+	<button>Nee</button>
+	<button>Ja</button>
 		<a href="#question3">Vraag 3</a>
 </section>
 
 <section id="question3">
-	<p>3de vraag</p>
+	<p>Verlaat jij verouderde websites ook direct?</p>
+	<button>Nee</button>
+	<button>Ja</button>
 		<a href="#question4">Vraag 4</a>
 </section>
 <section id="question4">
-	<p>4de vraag</p>
+	<p>Javascript is mijn 2de naam</p>
+	<button>Nee</button>
+	<button>Ja</button>
 		<a href="#question5">Vraag 5</a>
 </section>
 <section id="question5">
-	<p>5de vraag</p>
+	<p>Blaaa blaaaa</p>
+	<button>Nee</button>
+	<button>Ja</button>
+	<a href="#resultaat">Jouw resultaat</a>
+</section>
+<section id="resultaat">
+	<p>Het resultaat</p>
 	<a href="#start">Terug naar boven</a>
 </section>
 	<div class="clearfix"></div>
