@@ -52,9 +52,9 @@ h2
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
   border-radius: 100px;
-  -webkit-box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
-  -moz-box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
-  box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+  -webkit-box-shadow: 4px 10px 7px #999999;
+  -moz-box-shadow: 4px 10px 7px #999999;
+  box-shadow: 4px 10px 7px #999999;
  
   background: #e51d16; /* Old browsers */
   background: -moz-linear-gradient(top,  #e51d16 0%, #b21203 100%); /* FF3.6+ */
@@ -68,6 +68,10 @@ h2
 .go:active
 {
 	margin-top: 78px;
+	-webkit-box-shadow: 4px 7px 7px #999999;
+  	-moz-box-shadow: 4px 7px 7px #999999;
+  	box-shadow: 4px 7px 7px #999999;
+
 }
 #question1{
 background-color: red;
