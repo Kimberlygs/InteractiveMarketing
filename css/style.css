@@ -71,11 +71,9 @@ h2
 }
 
 #question1{
-background: -webkit-linear-gradient(left,#3498db, #2980b9); /* For Safari 5.1 to 6.0 */
-background: -o-linear-gradient(right, #3498db, #2980b9); /* For Opera 11.1 to 12.0 */
-background: -moz-linear-gradient(right, #3498db, #2980b9); /* For Firefox 3.6 to 15 */
-background: linear-gradient(right, #3498db, #2980b9); /* Standard syntax (must be last) */
-min-height:100%;
+	background:url('../img/char2.png') no-repeat -10% 20%;
+	background-color:#2980b9;
+	min-height:100%;
 }
 .container
 {
