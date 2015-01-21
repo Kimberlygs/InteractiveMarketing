@@ -261,10 +261,10 @@ min-height:100%;
 	font-size: 19pt;
 }
 #question5{
-background: -webkit-linear-gradient(left,#f1c40f, #f39c12); /* For Safari 5.1 to 6.0 */
-background: -o-linear-gradient(right, #f1c40f, #f39c12); /* For Opera 11.1 to 12.0 */
-background: -moz-linear-gradient(right, #f1c40f, #f39c12); /* For Firefox 3.6 to 15 */
-background: linear-gradient(right, #f1c40f, #f39c12); /* Standard syntax (must be last) */
+	background:url("../img/char6.png") -12% 30%;
+	background-color: #f39c12;
+	background-repeat: no-repeat;
+
 min-height:100%;
 }
 #question5 ul p
