@@ -9,6 +9,69 @@
      	'scrollTop': $target.offset().top}, 1000, 'swing');
 	});
 
+	$('#start').css("display","block");
+	$('#question1').css("display","none");
+	$('#question2').css("display","none");
+	$('#question3').css("display","none");
+	$('#question4').css("display","none");
+	$('#question5').css("display","none");
+	$('.resultSection').css("display","none");
+
+	$('.vraag1').on('click',function(){
+		$('#start').fadeOut();
+		$('#question1').fadeIn();
+		$('#question2').css("display","none");
+		$('#question3').css("display","none");
+		$('#question4').css("display","none");
+		$('#question5').css("display","none");
+		$('.resultSection').css("display","none");
+	});
+	$('.btn-q2').on('click',function(){
+		$('#start').css("display","none");
+		$('#question1').fadeOut();
+		$('#question2').fadeIn();
+		$('#question3').css("display","none");
+		$('#question4').css("display","none");
+		$('#question5').css("display","none");
+		$('.resultSection').css("display","none");
+	});
+	$('.btn-q3').on('click',function(){
+		$('#start').css("display","none");
+		$('#question1').css("display","none");
+		$('#question2').fadeOut();
+		$('#question3').fadeIn();
+		$('#question4').css("display","none");
+		$('#question5').css("display","none");
+		$('.resultSection').css("display","none");
+	});
+	$('.btn-q4').on('click',function(){
+		$('#start').css("display","none");
+		$('#question1').css("display","none");
+		$('#question2').css("display","none");
+		$('#question3').fadeOut();
+		$('#question4').fadeIn();
+		$('#question5').css("display","none");
+		$('.resultSection').css("display","none");
+	});
+	$('.btn-q5').on('click',function(){
+		$('#start').css("display","none");
+		$('#question1').css("display","none");
+		$('#question2').css("display","none");
+		$('#question3').css("display","none");
+		$('#question4').fadeOut();
+		$('#question5').fadeIn();
+		$('.resultSection').css("display","none");
+	});
+	$('.btn-res').on('click',function(){
+		$('#start').css("display","none");
+		$('#question1').css("display","none");
+		$('#question2').css("display","none");
+		$('#question3').css("display","none");
+		$('#question4').css("display","none");
+		$('#question5').fadeOut();
+		$('.resultSection').fadeIn();
+	});
+
 	//LOADING IMAGE
 
 	$('.btn-res').on('click', function(){
