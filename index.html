@@ -8,7 +8,8 @@
 	<meta name="viewport"  content="width=device-width">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>	<link rel="stylesheet" href="css/reset.css" media="all" />
+	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>	
+	<link rel="stylesheet" href="css/reset.css" media="all" />
 	<link rel="stylesheet" href="css/style.css" media="all" />
 	<script src="js/interaction.js"></script>
 	<script src="js/modernizr.js"></script>
@@ -18,34 +19,35 @@
 			 var console = { log: function() {} };
 		</script>
 	<![endif]-->
+
 </head>
 <body>
 <section id="start">
+	<div class="wrapper">
 	<h1>Ben jij de toekomst van #WeAreIMD ?</h1>
-	<h2>Ben je net afgestudeerd, en niet zeker wat de toekomst zal brengen? <br/>
-		Wie weet ben jij wel de toekomst van Interactive Multimedia Design! <br/>
-		Ben je al nieuwsgierig? Wij ook trouwens! Gebruik onze voorspeller om te zien of jouw toekomst bij ons ligt.
-	</h2>
-	<nav class="main-nav">
-		<a class="cd-signup go" href="#0">Go!</a>
-	</nav>
-</section>	
-<div class="cd-user-modal"> <!-- this is the entire modal form, including the background -->
+	<h2>Ben je net afgestudeerd, en niet zeker wat de toekomst zal brengen? </h2>
+	<h2>Wie weet ben jij wel de toekomst van Interactive Multimedia Design! </h2>
+	<h2>Ben je al nieuwsgierig? Wij ook trouwens! Gebruik onze voorspeller om te zien of jouw toekomst bij ons ligt.</h2>
+	
+	<div class="main-nav">
+		<div id="voorspelknop">
+			<a class="cd-signup voorspeller" href="#0">Go!</a>
+		</div>
+	</div>
+
+	<div class="cd-user-modal"> <!-- this is the entire modal form, including the background -->
 		<div class="cd-user-modal-container"> <!-- this is the container wrapper -->
-			
-
-
 			<div id="cd-signup"> <!-- sign up form -->
 				<form class="cd-form">
 					<p class="fieldset">
 						<label class="image-replace cd-username" for="signup-username">Naam</label>
-						<input class="full-width has-padding has-border naam" id="signup-username" type="text" placeholder="Naam">
+						<input class="full-width has-padding has-border naam" id="signup-username" type="text" placeholder="Naam"><br>
 						<span class="error-naam">Vul je naam in</span>
 					</p>
 
 					<p class="fieldset">
 						<label class="image-replace cd-email" for="signup-email">E-mail</label>
-						<input class="full-width has-padding has-border emailAdres" id="signup-email" type="email" placeholder="E-mail">
+						<input class="full-width has-padding has-border emailAdres" id="signup-email" type="email" placeholder="E-mail"><br>
 						<span class="error-email">Vul je email adres in</span>
 					</p>
 
@@ -53,11 +55,14 @@
 						<input class="full-width has-padding" type="submit" value="Ontdek jouw toekomst" href="#question1">
 					</p>
 				</form>
-
 				<!-- <a href="#0" class="cd-close-form">Close</a> -->
 			</div> <!-- cd-signup -->
 		</div> <!-- cd-user-modal-container -->
 	</div> <!-- cd-user-modal -->
+	
+	</div>
+</section>	
+
 
 
 <section id="question1">

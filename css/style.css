@@ -10,72 +10,60 @@ body {
 	height: 100%;
 	background-color:#f3f0f0;
 }
+
+.wrapper{max-width:1200px;width: 100%; margin:0 auto;}
+
 #start
 {
 	min-height:100%;
 	background-color: white;
 }
 .error-email, .error-naam{
-	color: red;
+	color: rgb(231, 57, 57);
 }
+
 h1
 {
-	font-family: 'Montserrat', sans-serif;
-	display: block;
-	width: 100%;
-	max-width: 1020px;
-	margin-left: auto;
-	margin-right: auto;
-	font-size: 32pt;
-	padding-top: 50px;
+	font-size: 48px;
+	font-weight: bold;
 }
+
 h2
 {
-	display: block;
-	width: 100%;
-	max-width: 1020px;
-	margin-left: auto;
-	margin-right: auto;
-	font-size: 12pt;
-	margin-top: 25px;
-	line-height: 18pt;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 22px;
 }
-.go {
+
+
+#voorspelknop{
+	background:rgb(245, 59, 59);
+	border-radius:50%;
+	width:100px;
+	margin:100px auto;
+	height:100px;
+	padding:20px;
+}
+
+.voorspeller {
   height: 100px;
   width: 100px;
   color: white;
   text-align: center;
   line-height: 100px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 75px;
   font-size: 18pt;
-
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  border-radius: 100px;
-  -webkit-box-shadow: 4px 10px 7px #999999;
-  -moz-box-shadow: 4px 10px 7px #999999;
-  box-shadow: 4px 10px 7px #999999;
- 
-  background: #e51d16; /* Old browsers */
-  background: -moz-linear-gradient(top,  #e51d16 0%, #b21203 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e51d16), color-stop(100%,#b21203)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  #e51d16 0%,#b21203 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  #e51d16 0%,#b21203 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  #e51d16 0%,#b21203 100%); /* IE10+ */
-  background: linear-gradient(top,  #e51d16 0%,#b21203 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e51d16', endColorstr='#b21203',GradientType=0 ); /* IE6-9 */
+  border-radius: 50%;
+  box-shadow:0px 5px 0px 1px #CF1711;
+  background: #e51d16; 
+  margin-top:-2px;
 }
-.go:active
+.voorspeller:active
 {
-	margin-top: 78px;
-	-webkit-box-shadow: 4px 7px 7px #999999;
-  	-moz-box-shadow: 4px 7px 7px #999999;
-  	box-shadow: 4px 7px 7px #999999;
-
+	margin-top: 2px;
+  	box-shadow: 0px 1px 0px 1px #CF1711;
 }
+
 #question1{
 background: -webkit-linear-gradient(left,#3498db, #2980b9); /* For Safari 5.1 to 6.0 */
 background: -o-linear-gradient(right, #3498db, #2980b9); /* For Opera 11.1 to 12.0 */
@@ -861,7 +849,6 @@ img {
 }
 
 input, textarea {
-  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-size: 1rem;
 }
@@ -1014,6 +1001,11 @@ input::-ms-clear, textarea::-ms-clear {
 .cd-form input.full-width {
   width: 80%;
 }
+
+.cd-form input[type="submit"] {
+  width: 94%;
+}
+
 .cd-form input.has-padding {
   padding: 12px 20px 12px 50px;
 }
@@ -1040,7 +1032,7 @@ input::-ms-clear, textarea::-ms-clear {
 .cd-form input[type=submit] {
   padding: 16px 0;
   cursor: pointer;
-  background: #2f889a;
+  background: rgb(245, 59, 59);
   color: #FFF;
   font-weight: bold;
   border: none;
@@ -1051,7 +1043,7 @@ input::-ms-clear, textarea::-ms-clear {
   appearance: none;
 }
 .no-touch .cd-form input[type=submit]:hover, .no-touch .cd-form input[type=submit]:focus {
-  background: #3599ae;
+  background: rgb(231, 57, 57);
   outline: none;
 }
 .cd-form .hide-password {
