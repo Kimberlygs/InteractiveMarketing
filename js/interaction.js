@@ -6,7 +6,7 @@
 	    var $target = $(target);
 
 	    $('html, body').stop().animate({
-     	'scrollTop': $target.offset().top}, 900, 'swing');
+     	'scrollTop': $target.offset().top}, 1000, 'swing');
 	});
 
 	//LOADING IMAGE
@@ -20,6 +20,7 @@
 	});
 
 });
+
 
 /* ---------------- BEGIN JQUERY  POP UP -----------------------*/
  jQuery(document).ready(function($){
@@ -121,3 +122,17 @@ jQuery.fn.putCursorAtEnd = function() {
     	}
 	});
 };
+
+	
+	$(".btn-q2").on('click',function(){
+
+		if($('#slideOne') = checked){
+
+		alert("checked");
+
+	}
+
+
+	});
+
+
