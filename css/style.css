@@ -304,7 +304,6 @@ min-height:100%;
 
 #btnresult{
 	min-height:100%;
-	background:url("../img/alltogether.png");
 	background-color: #333;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -313,11 +312,11 @@ min-height:100%;
 
 #result{
 	min-height:100%;
-	background:url("../img/alltogether.png");
-	background-color: #333;
+	background:url("../img/char1.png"), url("../img/char2.png"), url("../img/char3.png"), url("../img/char4.png"), url("../img/char6.png");
+	background-position: 0% 160%, 26% 140%, 47% 120%, 69% 128%, 92% 120%; 
+	background-size:20%, 12%, 15%, 12%, 13%;
+	background-color: #5A9BBD;
 	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
 }
 #result h4
 {
