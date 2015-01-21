@@ -8,6 +8,17 @@
 	    $('html, body').stop().animate({
      	'scrollTop': $target.offset().top}, 900, 'swing');
 	});
+
+	//LOADING IMAGE
+
+	$('.btn-res').on('click', function(){
+		console.log('test');
+		setTimeout(function(){ 
+			$('.spinner').fadeOut();
+			$('#result h3').fadeIn();
+			$('#result h4').fadeIn(); }, 3000);
+	});
+
 });
 
 /* ---------------- BEGIN JQUERY  POP UP -----------------------*/
