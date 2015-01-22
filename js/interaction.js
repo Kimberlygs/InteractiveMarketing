@@ -241,10 +241,10 @@ jQuery.fn.putCursorAtEnd = function() {
 			$(".resultaat").text("je ben de OPPER IMD");
 			alert("punten zijn hoger dan 3");
 		}else{
-			$('.resultaat')text("Misschien is IMD toch niets voor jou, GA NAAR IMS");
+			$('.resultaat').text("Misschien is IMD toch niets voor jou, GA NAAR IMS");
 			alert("punten zijn lager dan 3");
 		}
 
 	 });
 
-}
+});
