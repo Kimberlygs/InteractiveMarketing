@@ -78,8 +78,8 @@
 		console.log('test');
 		setTimeout(function(){ 
 			$('.spinner').fadeOut(function(){
-				$('#result h3').fadeIn();
-			$('#result h4').fadeIn();
+				$('#result h3').fadeIn("slow");
+			$('#result h4').fadeIn("fast");
 			})}, 3000);
 
 	});
