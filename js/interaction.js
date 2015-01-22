@@ -193,7 +193,6 @@ jQuery.fn.putCursorAtEnd = function() {
 	$('.btn-q2').on('click',function(){
 		if($('#q1-nee').is(':checked')) {
 		    $aantalPunten = $aantalPunten; 
-		    alert("its not checked");
 		}else{
 			$aantalPunten = $aantalPunten + 1;
 		}
@@ -203,7 +202,6 @@ jQuery.fn.putCursorAtEnd = function() {
 	$('.btn-q3').on('click',function(){
 		if($('#q2-nee').is(':checked')) {
 		    $aantalPunten = $aantalPunten; 
-		    alert("its not checked");
 		}else{
 			$aantalPunten = $aantalPunten + 1;
 		}
@@ -213,7 +211,6 @@ jQuery.fn.putCursorAtEnd = function() {
 	$('.btn-q4').on('click',function(){
 		if($('#q3-nee').is(':checked')) {
 		    $aantalPunten = $aantalPunten;
-		    alert("its not checked"); 
 		}else{
 			$aantalPunten = $aantalPunten + 1;
 		}
@@ -223,7 +220,6 @@ jQuery.fn.putCursorAtEnd = function() {
 	$('.btn-q5').on('click',function(){
 		if($('#q4-nee').is(':checked')) {
 		    $aantalPunten = $aantalPunten; 
-		    alert("its not checked");
 		}else{
 			$aantalPunten = $aantalPunten + 1;
 		}
@@ -232,17 +228,14 @@ jQuery.fn.putCursorAtEnd = function() {
 	 $('ben-res').on('click',function(){
 	 	if($('#q5-nee').is(':checked')) {
 		    $aantalPunten = $aantalPunten; 
-		    alert("its not checked");
 		}else{
 			$aantalPunten = $aantalPunten + 1;
 		}
 
 		if($aantalPunten > 3){
 			$(".resultaat").text("je ben de OPPER IMD");
-			alert("punten zijn hoger dan 3");
 		}else{
 			$('.resultaat').text("Misschien is IMD toch niets voor jou, GA NAAR IMS");
-			alert("punten zijn lager dan 3");
 		}
 
 	 });

@@ -25,7 +25,22 @@ body {
 .error-email, .error-naam{
 	color: rgb(231, 57, 57);
 }
-
+.container form label
+{
+	color: white;
+	font-size: 17pt;
+	padding-top: 50px;
+}
+.container form
+{
+	display: block;
+	margin-top: 50px;
+}
+.answer
+{
+	display: block;
+	padding-bottom: 25px;
+}
 h1
 {
 	font-size: 48px;
@@ -119,7 +134,7 @@ input[type=checkbox] {
 {
 	display: block;
 	width: 150px;
-	margin-top: 120px;
+	margin-top: -20px;
   	padding: 10px 20px;
   	font-size: 22px;
   	color: white;
@@ -166,7 +181,6 @@ min-height:100%;
 {
 	display: block;
 	width: 150px;
-	margin-top: 150px;
   	padding: 10px 20px;
   	font-size: 22px;
   	color: white;
@@ -205,7 +219,6 @@ min-height:100%;
 .btn-q4 {
   	display: block;
 	width: 150px;
-	margin-top: 150px;
   	padding: 10px 20px;
   	font-size: 22px;
   	color: white;
@@ -228,12 +241,11 @@ min-height:100%;
 	background:url("../img/char5.png") 119% 30%;
 	background-color: #CC3E2E;
 	background-repeat: no-repeat;
-min-height:100%;
+	min-height:100%;
 }
 .btn-q5 {
  	display: block;
 	width: 150px;
-	margin-top: 150px;
   	padding: 10px 20px;
  	font-size: 22px;
 	color:#454545;
@@ -282,7 +294,6 @@ min-height:100%;
 .btn-res {
 	display: block;
 	width: 450px;
-	margin-top: 150px;
   	padding: 10px 20px;
 	font-size: 22px;
   	color:white;
