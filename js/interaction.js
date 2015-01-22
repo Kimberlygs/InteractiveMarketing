@@ -77,9 +77,10 @@
 	$('.btn-res').on('click', function(){
 		console.log('test');
 		setTimeout(function(){ 
-			$('.spinner').fadeOut();
-			$('#result h3').fadeIn();
-			$('#result h4').fadeIn(); }, 3000);
+			$('.spinner').fadeOut(function(){
+				$('#result h3').fadeIn();
+			$('#result h4').fadeIn();
+			})}, 3000);
 
 	});
 });
