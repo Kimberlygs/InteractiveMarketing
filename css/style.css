@@ -25,6 +25,11 @@ body {
 .error-email, .error-naam{
 	color: rgb(231, 57, 57);
 }
+
+.cd-user-modal-container h2{
+	padding:34px;
+}
+
 .container form label
 {
 	color: white;
