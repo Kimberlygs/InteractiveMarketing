@@ -337,12 +337,14 @@ min-height:100%;
 {
 	display: none;
 	padding-top: 50px;
-	font-size: 19pt;
+	font-size: 22pt;
+	line-height:38px;
+	color:#2B319E;
 }
 #result h3
 {
 	display: none;
-	color: black;
+	color: #fff;
 }
 .spinner {
 	padding-top: 250px;
