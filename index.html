@@ -68,20 +68,10 @@
 	<div class="container">
 		<h3>Vraag #1</h3>
 		<p>Ben jij, net zoals ons, zot van coole graphics en moderne websites?</p>
-		<ul class="slider">
-			<li>
-				<p>Nee,toch niet</p>
-			</li>
-			<li>
-				<div class="slideOne">	
-				<input type="checkbox" value="None" id="slideOne" name="check" />
-				<label for="slideOne"></label>
-				</div>
-			</li>
-			<li>
-				<p>Ja, zoiezo!</p>
-			</li>
-		</ul>
+		<form>
+			<label for="q1-nee">Nee, toch niet</label><input id="q1-nee" type="radio" value="nee" name="keuze1">
+			<input type="radio" value="ja" name="keuze1" id="q1-ja"><label for="q1-ja">Ja, sowieso</label>
+		</form>
 		<p class="clearfix">&nbsp;</p>
 		<a href="#question2" class="btn-q2">Volgende</a>
 	</div>
@@ -91,20 +81,10 @@
 	<div class="container">
 		<h3>Vraag #2</h3>
 		<p>Droom jij ervan om het nieuwe Facebook uit te vinden, én miljonair te worden?</p>
-		<ul class="slider">
-			<li>
-				<p>Nee, zo creatief ben ik niet.</p>
-			</li>
-			<li>
-				<div class="slideTwo">	
-				<input type="checkbox" value="None" id="slideTwo" name="check" />
-				<label for="slideTwo"></label>
-				</div>
-			</li>
-			<li>
-				<p>Ja, ik heb zotte ideeën genoeg!</p>
-			</li>
-		</ul>
+		<form>
+			<label for="q2-nee">Nee, zo creatief ben ik niet</label><input id="q2-nee" type="radio" value="nee" name="keuze2">
+			<input id="q2-ja" type="radio" value="ja" name="keuze2"><label for="q2-ja">Ja, ik heb zotte ideeën genoeg!</label>
+		</form>
 		<p class="clearfix">&nbsp;</p>
 		<a href="#question3" class="btn-q3">Volgende</a>
 	</div>
@@ -114,20 +94,10 @@
 	<div class="container">
 		<h3>Vraag #3</h3>
 		<p>Verlaat jij verouderde websites ook onmiddelijk?</p>
-		<ul class="slider">
-			<li>
-				<p>Nee, ik hou er wel van.</p>
-			</li>
-			<li>
-				<div class="slideThree">	
-				<input type="checkbox" value="None" id="slideThree" name="check" />
-				<label for="slideThree"></label>
-				</div>
-			</li>
-			<li>
-				<p>Ja, ik kan het niet uitstaan!</p>
-			</li>
-		</ul>
+		<form>
+			<label for="q3-nee">Nee, ik hou er wel van.</label><input id="q3-nee" type="radio" value="nee" name="keuze3">
+			<input type="radio" value="ja" name="keuze3" id="q3-ja"><label for="q3-ja">Ja, ik kan het niet uitstaan!</label>
+		</form>
 		<p class="clearfix">&nbsp;</p>
 		<a href="#question4" class="btn-q4">Volgende</a>
 	</div>
@@ -136,20 +106,10 @@
 	<div class="container">
 		<h3>Vraag #4</h3>
 		<p>Noemen jouw vrienden je ook wel eens de JavaScript-Ninja?</p>
-		<ul class="slider">
-			<li>
-				<p>Nee, ze vinden mijn naam al grappig genoeg.</p>
-			</li>
-			<li>
-				<div class="slideFour">	
-				<input type="checkbox" value="None" id="slideFour" name="check" />
-				<label for="slideFour"></label>
-				</div>
-			</li>
-			<li>
-				<p>Ja, ik heb niet liever!</p>
-			</li>
-		</ul>
+		<form>
+			<label for="q4-nee">Nee, ze vinden mijn naam al grappig genoeg.</label><input id="q4-nee" type="radio" value="nee" name="keuze4">
+			<input type="radio" value="ja" name="keuze4" id="q4-ja"><label for="q4-ja">Ja, ik heb niet liever!</label>
+		</form>
 		<p class="clearfix">&nbsp;</p>
 		<a href="#question5" class="btn-q5">Volgende</a>
 	</div>
@@ -158,20 +118,11 @@
 	<div class="container">
 		<h3>Vraag #5</h3>
 		<p>Volg jij stiekem alle IMD'ers al op Twitter?</p>
-		<ul class="slider">
-			<li>
-				<p>Nee. Wat is Twitter eigenlijk?</p>
-			</li>
-			<li>
-				<div class="slideFive">	
-				<input type="checkbox" value="None" id="slideFive" name="check" />
-				<label for="slideFive"></label>
-				</div>
-			</li>
-			<li>
-				<p>Ja, ik stalk ze allemaal!</p>
-			</li>
-		</ul>
+		<form>
+			<label for="q5-nee">Nee. Wat is Twitter eigenlijk?</label><input id="q5-nee" type="radio" value="nee" name="keuze5">
+			<input type="radio" value="ja" name="keuze3" id="q5-ja"><label for="q5-ja">Ja, ik stalk ze allemaal!</label>
+		</form>
+		
 		<p class="clearfix">&nbsp;</p>
 		<a href="#result" id="btnresult" class="btn-res">Kan ik een goeie IMD'er worden?</a>
 	</div>
@@ -187,8 +138,7 @@
 		</div>
 
 		<h3>Het resultaat:</3>
-		<h4>Jij kan een TOP-IMD'er worden!</h4>
-		<p class="result"></p>
+		<h4 clas="resultaat"></h4>
 	</div>
 </section>
 	<div class="clearfix"></div>
