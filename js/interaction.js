@@ -9,7 +9,7 @@
      	'scrollTop': $target.offset().top}, 1000, 'swing');
 	});
 
-	/*$('#start').css("display","block");
+	$('#start').css("display","block");
 	$('#question1').css("display","none");
 	$('#question2').css("display","none");
 	$('#question3').css("display","none");
@@ -71,7 +71,6 @@
 		$('#question5').fadeOut();
 		$('.resultSection').fadeIn();
 	});
-*/
 
 	//LOADING IMAGE
 
