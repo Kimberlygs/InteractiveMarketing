@@ -69,8 +69,8 @@
 		console.log('test');
 		setTimeout(function(){ 
 			$('.spinner').fadeOut(function(){
-				$('#result h3').fadeIn("slow");
-			$('#result h4').fadeIn("fast");
+				$('#result h3').fadeIn("fast");
+			$('#result h4').fadeIn("slow");
 			})}, 3000);
 
 	});
